@@ -33,3 +33,4 @@ Yevchenko Eduard
 Andrii Shaposhnyk
 Yaroslav Petruk
 Vinichenko Viktoria
+Smetanina Antonina
