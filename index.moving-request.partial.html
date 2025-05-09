@@ -1,0 +1,23 @@
+<section class="moving-request">
+    <h2 class="moving-request__title">Moving Request</h2>
+    <form action="/submit-request" method="POST" class="moving-request__form">
+        <div class="moving-request__form-group">
+            <label for="name" class="moving-request__label">Your Name</label>
+            <input type="text" id="name" name="name" class="moving-request__input" required>
+        </div>
+        <div class="moving-request__form-group">
+            <label for="email" class="moving-request__label">Email Address</label>
+            <input type="email" id="email" name="email" class="moving-request__input" required>
+        </div>
+        <div class="moving-request__form-group">
+            <label for="move-date" class="moving-request__label">Date of Move</label>
+            <input type="date" id="move-date" name="move-date" class="moving-request__input" required>
+        </div>
+        <div class="moving-request__form-group">
+            <label for="details" class="moving-request__label">Additional Details</label>
+            <textarea id="details" name="details" class="moving-request__textarea"></textarea>
+        </div>
+        <button type="submit" class="moving-request__submit-button">Submit Request</button>
+    </form>
+    <p class="moving-request__footer">EasyMove has all of that and more.</p>
+</section>
