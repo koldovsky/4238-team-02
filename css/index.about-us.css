@@ -21,6 +21,8 @@
 .about__image {
   width: 100%;
   height: auto;
+  border-radius: 3px;
+
 }
 
 .about__content {
@@ -40,9 +42,9 @@
 }
 
 .about__paragraph--title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: var(--font-title-size);
+  font-weight: 800;
+  line-height: 1;
 }
 
 .about__features {

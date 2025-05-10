@@ -10,6 +10,7 @@
 :root {
   scroll-behavior: smooth;
   --font-main: 'Assistant', sans-serif;
+  --font-title-size:54px;
   --color-primary: #5c524b;
   --color-secondary: #f9c649;
   --color-accent: #f5f4f2;
