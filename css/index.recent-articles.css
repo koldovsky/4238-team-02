@@ -1,0 +1,29 @@
+.recent-articles {
+  padding: 90px 0px;
+  background-color: var(--color-accent);
+}
+.recent-articles__title {
+  text-align: center;
+  font-size: 38px;
+  color: #5c524b;
+  font: size 38px;
+  font-weight: 800;
+  }
+.recent-articles__subtitle {
+  color: #76706b;
+  text-align: center;
+  font-size: 19px;
+  padding: 24px 0;
+  font-weight: 600;
+  line-height: 26.6px;
+}
+.recent-articles__list {
+    background-image: url(../img/recent-articles/moving-happy.png);
+    text-align: left;
+    
+
+    
+    }
+
+
+  
