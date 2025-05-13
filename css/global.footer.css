@@ -7,17 +7,23 @@
   justify-content: center;
 }
 
+.footer__logo-image {
+  width: 162px;   
+  height: auto;
+  margin-top: 30px;   
+}
+
 .footer__description {
   color: #a4a29f;
   font-size: 16px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .footer__socials {
   display: flex;
   justify-content: center;
-  gap: 8px; 
+  gap: 8px;
   margin-top: 30px;
 }
 
@@ -33,10 +39,28 @@
 }
 
 .footer__menu {
+  display: flex;
   text-align: center;
+  flex-direction: column;
   color: #a4a29f;
 }
 
+.footer__menu-link {
+  color: #a4a29f;
+  text-decoration: none;
+}
+
 .footer__menu-item {
-   margin-top: 20px;
+  margin-top: 20px;
+
+}
+
+.footer__subscribe-message {
+  .footer__subscribe-title {
+    color: var(--color-secondary);
+  }
+  color: var(--color-accent);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
 }
