@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+  .our-services__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-services__item {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .our-services__item-title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .our-services__price {
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 4px;
+    margin: 0 auto;
+  }
+
+  .our-services__img {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 351px;
+  height: 229px;
+  border-radius: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.our-services__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.our-services {
+  max-width: 1194px;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.our-services__title {
+  font-size: 46px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 1114px;
+}
+
+.our-services__price {
+  color: var(--color-secondary);
+  font-weight: bold;
+  font-style: italic;
+  margin-left: auto;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-top: 8px;
+  text-align: left;
+  padding-right: 15px;
+}
+
+.our-services__item-title {
+  font-size: 24px;
+  padding-right: 15px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  max-width: 90%;
+}
+
+.our-services__item-description {
+  font-family: var(--font-secondary);
+  font-size: 17px;
+  font-weight: normal;
+  color: #89807a;
+  padding-top: 30px;
+}
+
+.our-services__subtitle {
+  font-family: var(--font-secondary);
+  font-size: 19px;
+  font-weight: bold;
+  color: #76706a;
+  text-align: center;
+  max-width: 1114px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.our-services__item {
+  flex: 1 1 30%;
+  text-align: center;
+  padding-top: 8px;
+  padding-right: 15px;
+  text-align: left;
+}
