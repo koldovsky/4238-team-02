@@ -17,13 +17,56 @@
   font-weight: 600;
   line-height: 26.6px;
 }
-.recent-articles__list {
-    background-image: url(../img/recent-articles/moving-happy.png);
-    text-align: left;
-    
+.recent-articles__item-happy {
+   background-image: url(../img/recent-articles/moving-happy.png);
+   .recent-articles__description-happy {
+      font-size: 22px;
+      text-align: left;
+      justify-content: flex-start;
+      color: rgb(255, 255, 255);
+      border-image: stretch;
+      font-weight: 700;
+      line-height: 28.6px;
+   }
+   }
+  .recent-articles__link {
+    color: rgb(249, 198, 73);
+    border: image slice 100px;
+
+  }
+  .recent-articles__item-worker {
+    background-image: url(../img/recent-articles/moving-worker.png);
+     .recent-articles__description-worker {
+      font-size: 22px;
+      text-align: left;
+      justify-content: flex-start;
+      color: rgb(255, 255, 255);
+      border-image: stretch;
+      font-weight: 700;
+      line-height: 28.6px;}
+   }
+   .recent-articles__item-family-work {
+    background-image: url(../img/recent-articles/moving-family-work.png);
+    .recent-articles__description-family-work {
+      font-size: 22px;
+      text-align: left;
+      justify-content: flex-start;
+      color: rgb(255, 255, 255);
+      border-image: stretch;
+      font-weight: 700;
+      line-height: 28.6px;
+    }
+  }
+
+   
+  
 
     
-    }
+
+  
+
+    
+    
 
 
   
