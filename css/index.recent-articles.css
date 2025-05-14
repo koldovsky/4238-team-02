@@ -1,0 +1,71 @@
+.recent-articles {
+  padding: 90px 0;
+  background-color: var(--color-accent);
+}
+
+.recent-articles__title {
+  text-align: center;
+  font-size: 38px;
+  color: #5c524b;
+  font-weight: 800;
+}
+
+.recent-articles__subtitle {
+  color: #76706b;
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 48px;
+}
+
+.recent-articles__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.recent-articles__item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 353px;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.recent-articles__item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.recent-articles__description {
+  position: relative;
+  z-index: 2;
+  font-size: 22px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 28.6px;
+}
+.recent-articles__link {
+  color: rgb(249, 198, 73);
+}
+
+.recent-articles__item--happy {
+  background-image: url(img/recent-articles/moving-happy.png);
+}
+
+.recent-articles__item--worker {
+  background-image: url(img/recent-articles/moving-worker.png);
+}
+
+.recent-articles__item--family-work {
+  background-image: url(img/recent-articles/moving-family-work.png);
+}
+
+
+  
