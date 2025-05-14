@@ -36,3 +36,4 @@ Vinichenko Viktoria
 Smetanina Antonina
 Tkach Andrii
 Savchuk Maria
+Kulik Sofia
