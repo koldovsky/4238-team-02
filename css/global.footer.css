@@ -64,3 +64,23 @@
   text-align: center;
   margin-top: 20px;
 }
+.footer__input {
+  border-color:#f5f4f2;
+  background-color: #554c46;
+  display: block;
+  text-align: center;
+  /*Complete later*/
+}
+
+.footer__button {
+  display: inline-block;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #554c46;
+  background-color: var(--color-secondary);
+  border-radius: 34px;
+  border: none;
+}
+
+/*desktop*/
