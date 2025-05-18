@@ -1,14 +1,16 @@
-<footer class="footer">
-  <a href="#" class="footer__logo">
-    <img src="img/footer/logo_footer.svg" alt="EasyMove logo" class="footer__logo-image" />
-  </a>
+<footer class="footer grid-container">
+  <!-- Колонка 1: Лого, опис, соцмережі -->
+  <div class="footer__column left__footer">
+    <a href="#" class="footer__logo">
+      <img src="img/footer/logo_footer.svg" alt="EasyMove logo" class="footer__logo-image" />
+    </a>
 
-  <div class="footer__description">
-    EasyMove is a team of professionals that know everything about packing and transporting all kinds of stuff.
-  </div>
+    <div class="footer__description">
+      EasyMove is a team of professionals that know everything about packing and transporting all kinds of stuff.
+    </div>
 
-  <div class="footer__socials">
-    <a href="#" aria-label="Facebook" class="footer__social-link">
+    <div class="footer__socials">
+      <a href="#" aria-label="Facebook" class="footer__social-link">
       <svg width="30" height="30" viewBox="0 0 32 32" style="border-radius: 50%;" xmlns="http://www.w3.org/2000/svg">
         <path class="footer__icon"
           d="M32 0H0V32H32V0ZM16.9133 25H13.6383V16.0044H12V13.1936H13.6383V10.9374H13.6443C13.7014 8.9864 14.3604 7.129 17.5674 7.0126V7H19.6171V9.8108H17.9447C17.3379 9.8108 16.9133 10.5002 16.9133 11.1568V13.1936H19.8561L19.3702 16.0044H16.9133V25Z"
@@ -30,44 +32,43 @@
           d="M0,0 L32,0 L32,32 L0,32 L0,0 Z M24.8319297,11.4874563 C24.6803369,10.1603684 24.3639692,9.77357894 24.1398754,9.59352174 C23.7839619,9.31343284 23.1380446,9.21340113 22.2746246,9.15338207 C20.8905163,9.06001905 18.537532,9 16,9 C13.455877,9 11.1094837,9.05335028 9.72537529,9.15338207 C8.86195533,9.21340113 8.21603808,9.31343284 7.8601245,9.59352174 C7.63603076,9.77357894 7.32625412,10.1603684 7.1680703,11.4874563 C6.94397657,13.4013973 6.94397657,17.7627818 7.1680703,19.6767227 C7.32625412,21.0038107 7.63603076,21.3906002 7.8601245,21.5706573 C8.21603808,21.8507463 8.86195533,21.950778 9.72537529,22.0107971 C11.1094837,22.1041601 13.455877,22.164179 16,22.164179 C18.544123,22.164179 20.8905163,22.1041601 22.2746246,22.0107971 C23.1380446,21.950778 23.7839619,21.8507463 24.1398754,21.5706573 C24.3639692,21.3972689 24.6737458,21.0038107 24.8319297,19.6767227 C25.0560234,17.7627818 25.0560234,13.4013973 24.8319297,11.4874563 Z M13.8249725,18.4429978 L13.8249725,12.7145125 L19.2559502,15.5754208 L13.8249725,18.4429978 Z" />
       </svg>
     </a>
-  </div>
-
-  <div class="footer__navigation">
-    <div class="footer__navigation-block">
-      <div class="footer__navigation-title">Navigation</div>
-      <ul class="footer__menu">
-        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Services</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link" href="#">About Us</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Steps</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Pricing</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__navigation-block">
-      <div class="footer__navigation-title">Support</div>
-      <ul class="footer__menu">
-        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Testimonials</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Blog</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Contact Us</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Moving Request</a></li>
-      </ul>
     </div>
   </div>
 
-  <div class="footer__subscribe-message">
-    <strong class="footer__subscribe-title">Subscribe</strong>
-    to get the latest news from us!
+  <!-- Колонка 2: Navigation -->
+  <div class="footer__column nav__footer">
+    <div class="footer__navigation-title">Navigation</div>
+    <ul class="footer__menu">
+      <li class="footer__menu-item"><a class="footer__menu-link" href="#">Services</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="#">About Us</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="#">Steps</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="#">Pricing</a></li>
+    </ul>
   </div>
 
-  <form class="footer__subscribe-form">
-    <input class="footer__input" type="email" placeholder="Email*" required />
-    <div>
+  <!-- Колонка 3: Support -->
+  <div class="footer__column support__footer">
+    <div class="footer__navigation-title">Support</div>
+    <ul class="footer__menu">
+      <li class="footer__menu-item"><a class="footer__menu-link" href="#">Testimonials</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="#">Blog</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="#">Contact Us</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="#">Moving Request</a></li>
+    </ul>
+  </div>
+
+  <!-- Колонка 4: Subscribe -->
+  <div class="footer__column subscribe__footer">
+    <div class="footer__subscribe-message">
+      <strong class="footer__subscribe-title">Subscribe</strong> to get the latest news from us!
+    </div>
+    <form class="footer__subscribe-form">
+      <input class="footer__input" type="email" placeholder="Email*" required />
       <button class="footer__button" type="submit">Subscribe</button>
-    </div>
-  </form>
-
-  <div class="footer__bottom">
-    <div class="footer__copyright">© Created by</div>
-    <div class="footer__rights">All rights reserved</div>
+    </form>
   </div>
+</div>
+<div class="footer__bottom">
+  <div class="footer__copyright">© Created by</div>
+  <div class="footer__rights">All rights Reserved</div>
 </footer>

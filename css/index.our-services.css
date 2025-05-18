@@ -23,7 +23,6 @@
   }
 
   .our-services__img {
-    width: 100%;
     height: auto;
     padding-left: 0;
     padding-right: 0;
@@ -31,8 +30,6 @@
 }
 
 img {
-  display: block;
-  max-width: 100%;
   width: 351px;
   height: 229px;
   border-radius: 40px;

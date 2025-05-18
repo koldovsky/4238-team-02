@@ -1,0 +1,101 @@
+.pricing {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.pricing__title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.pricing__description {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+}
+
+.pricing__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pricing__card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.pricing__card-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.pricing__features {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing__features li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.pricing__features span[aria-label='Included'] {
+  color: green;
+  font-weight: bold;
+}
+
+.pricing__features span[aria-label='Not included'] {
+  color: red;
+  font-weight: bold;
+}
+
+.pricing__price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.pricing__button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.pricing__button:hover,
+.pricing__button:focus {
+  background-color: #0056b3;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .pricing__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
