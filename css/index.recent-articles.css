@@ -17,6 +17,9 @@
   font-size: 19px;
   margin-bottom: 48px;
 }
+.recent-articles__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 .recent-articles__image-wrapper {
   position: relative;
@@ -65,4 +68,4 @@
   font-size: 14px;
 
 }
-  
+}
