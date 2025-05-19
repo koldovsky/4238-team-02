@@ -34,17 +34,29 @@
   margin-bottom: 30px;
 }
 
-.about__paragraph {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 16px;
-  color: var(--color-primary);
-}
-
 .about__paragraph--title {
   font-size: var(--font-title-size);
   font-weight: 800;
   line-height: 1;
+  font-family: var(--font-main);
+}
+
+
+.about__paragraph--subtitle {
+  font-size: 19px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  color: var(--color-dark);
+  font-family: var(--font-secondary);
+  font-weight: 400;
+}
+
+
+.about__paragraph {
+  color: var(--color-light);
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  margin-top: 25px;
 }
 
 .about__features {
