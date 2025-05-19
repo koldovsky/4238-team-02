@@ -11,12 +11,18 @@
 :root {
   scroll-behavior: smooth;
   --font-main: 'Assistant', sans-serif;
-  --font-secondary: 'Source Sans', sans-serif;
+  --font-secondary: 'Source Sans 3', sans-serif;
   --font-title-size:54px;
   --color-primary: #5c524b;
   --color-secondary: #f9c649;
   --color-accent: #f5f4f2;
+  --background-color-main: white;
+}
 
+header {
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+  background-color: var(--background-color-main);
 }
 
 body {
