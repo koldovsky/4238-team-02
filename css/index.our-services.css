@@ -1,35 +1,4 @@
-@media (max-width: 1024px) {
-  .our-services__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .our-services__item {
-    max-width: 100%;
-    padding-right: 0;
-  }
-
-  .our-services__item-title {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .our-services__price {
-    padding-left: 0;
-    padding-top: 4px;
-    margin: 0 auto;
-  }
-
-  .our-services__img {
-    height: auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-img {
+.our-services__img {
   width: 351px;
   height: 229px;
   border-radius: 40px;
@@ -109,4 +78,56 @@ img {
   padding-top: 8px;
   padding-right: 15px;
   text-align: left;
+}
+
+
+@media (max-width: 768px) {
+  .our-services__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .our-services__item-description {
+    width: 100%;
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .our-services__item {
+    max-width: 100%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .our-services__item-title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+  .our-services__price {
+    padding-left: 0;
+    padding-top: 4px;
+    margin: 0 auto;
+  }
+
+  .our-services__img {
+    height: auto;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto 24px;
+    border-radius: 40px;
+  }
 }
