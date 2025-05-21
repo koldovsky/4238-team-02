@@ -35,3 +35,7 @@ img {
   display: block;
   width: 100%;
 }
+
+h1 {
+  font-size: 4em;
+}
