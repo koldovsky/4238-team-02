@@ -65,18 +65,26 @@
   .header-hero__service {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     margin: 50px 0 0;
     padding: 7.5px;
 
-    .header-hero__service-image {
-      display: block;
+    .header-hero__service-image-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 70px;
       height: 70px;
       flex-shrink: 0;
       background-color: var(--color-secondary);
       border-radius: 999px;
       float: left;
+
+      .header-hero__service-image{
+        width: 40px;
+        height: 40px;
+      }
+
     }
 
     .header-hero__service-block {
@@ -89,6 +97,7 @@
       .header-hero__service-block-title {
         font-family: var(--font-main);
         font-size: 23px;
+        font-weight: 700;
         flex-wrap: wrap;
         margin: 3px 0;
       }
