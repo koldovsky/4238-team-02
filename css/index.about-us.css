@@ -53,6 +53,7 @@
 
 
 .about__paragraph {
+  font-size: 17px;
   color: var(--color-light);
   font-family: var(--font-secondary);
   font-weight: 400;
