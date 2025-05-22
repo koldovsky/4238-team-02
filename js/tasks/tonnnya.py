@@ -40,3 +40,36 @@ def lovefunc( flower1, flower2 ):
         return False
 
 print(lovefunc(11,40))
+
+# Task02
+
+def string_to_array(s):
+    return s.split(' ')
+
+print(string_to_array(''))
+
+def dna_to_rna(dna):
+    return dna.replace('T', 'U')
+
+print(dna_to_rna('TTTT'))
+
+def minimum(arr):
+    return f'min = {min(arr)}'
+
+def maximum(arr):
+    return f'max = {max(arr)}'
+
+arr = [0,3,342,2434,-12,43,0,-2334]
+print(minimum(arr), maximum(arr))
+
+
+def find_smallest(numbers, to_return):
+    if to_return == 'value':
+        return min(numbers)
+    if to_return == 'index':
+        return numbers.index(min(numbers))
+
+numbers = [1,2,3,-4,5]
+
+print(find_smallest(numbers, 'index'))
+
