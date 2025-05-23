@@ -1,3 +1,4 @@
+// https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 function stringToArray(string) {
   return string.split(" ");
 }
@@ -7,15 +8,16 @@ console.log(stringToArray("Hello world"));
 //    return dna.split('T').join('U');
 //}
 
+// https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 function DNAtoRNA(dna) {
   return dna.replaceAll("T", "U");
 }
 console.log(DNAtoRNA("TTTT"));
 
+// https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 var min = function (list) {
   return Math.min(...list);
 };
-
 var max = function (list) {
   return Math.max(...list);
 };
