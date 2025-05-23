@@ -35,3 +35,22 @@ function min(arr, toReturn) {
 console.log(min([1,2,3,4,5], "value"));
 console.log(min([1,2,3,4,5], "index"));
 
+function min_v2(arr, to_return){
+    min_number = arr[0]
+    min_index = 0
+    for (let i = 0; i < arr.length; i++ ){
+        if (arr[i] < min_number){
+            min_number = arr[i]
+            min_index = i
+            }
+        }
+
+    if (to_return === 'value'){
+        return min_number
+        }
+    if (to_return === 'index'){
+        return min_index}
+    }
+
+console.log(min_v2([1,2,3,-4,5], "value"))
+console.log(min_v2([1,2,-3,4,5], "index"))
