@@ -18,3 +18,17 @@ function circleCircumference(circle) {
 }
 const c = new Circle(10,10)
 console.log(circleCircumference(c));
+
+//https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
+function giveMeFive(obj){
+    let arr = []
+    for (let key in obj){
+        if (key.length === 5) {
+            arr.push(key)}
+        if (obj[key].length === 5) {
+            arr.push(obj[key])}}
+    return arr
+}
+
+console.log(giveMeFive({Our:"earth",is:"a",beautyful:"world"}))
+
