@@ -120,3 +120,42 @@ def arr_sorted(arr):
         return arr
 
 print(arr_sorted([1, 2, 3, -4, 5]))
+print('====')
+def twice_as_old(dad_years_old, son_years_old):
+        return abs(dad_years_old - 2 * son_years_old)
+
+print(twice_as_old(44,12))
+
+print('===')
+def nth_even(n):
+    return 2 * (n - 1)
+
+print(nth_even(3))
+
+print('===')
+def get_real_floor(n):
+    black_floor = 13
+    if 0 < n < black_floor:
+        return n - 1
+    elif n >= black_floor:
+        return n - 2
+    else:
+        return n
+
+print(get_real_floor(-3))
+
+def past(h, m, s):
+    hours_in_milisec = 3600000
+    minets_in_milisec = 60000
+    sec_in_milisec = 1000
+    return h * hours_in_milisec + m * minets_in_milisec + s * sec_in_milisec
+
+print(past(0,1,1))
+
+def is_divisible(n,x,y):
+    if n % x == 0 and n % y == 0:
+        return True
+    else:
+        return False
+print(is_divisible(3,1,3))
+
