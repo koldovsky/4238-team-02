@@ -1,3 +1,6 @@
+import math
+
+
 def goals(laLiga, copaDelRey, championsLeague):
     return laLiga + copaDelRey + championsLeague
 
@@ -159,3 +162,18 @@ def is_divisible(n,x,y):
         return False
 print(is_divisible(3,1,3))
 
+class Circle:
+    def __init__(self, center, radius):
+        self.center = center
+        self.radius = radius
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+def circle_circumference(circle):
+    return round(2 * math.pi * circle.radius, 6)
+
+c = Circle(10,10)
+print(circle_circumference(c))
+
+print(math.pi)
