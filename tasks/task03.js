@@ -32,3 +32,63 @@ function giveMeFive(obj){
 
 console.log(giveMeFive({Our:"earth",is:"a",beautyful:"world"}))
 
+//https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
+function buildFun(n){
+
+	var res = []
+
+	for (var i = 0; i< n; i++){
+		res.push(function(){
+			console.log(i)
+		})
+	}
+	return res
+}
+console.log(buildFun(10));
+
+class Animal {
+  constructor(name, age, legs, species, status) {
+    this.name = name;
+    this.age = age;
+    this.legs = legs;
+    this.species = species;
+    this.status = status;
+  }
+  introduce() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+  }
+}
+
+class Shark extends Animal {
+  constructor(name, age, legs, species, status) {
+    super(name, age, 0, 'shark', status);
+  }
+  introduce() {
+    return `${super.introduce()}`
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, age, legs, species, status) {
+    super(name, age, 4, 'cat', status);
+  }
+  introduce() {
+    return `${super.introduce()} Meow meow!`;
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, age, legs, species, status) {
+    super(name, age, 4, 'dog', status)
+    this.master = master
+  }
+  introduce() {
+    return `${super.introduce()}`;
+  }
+
+  greetMaster(master) {
+    return `Hello ${master}`;
+  }
+}
+
+console.log("Doug", 12, "Serving his master", "Eliza");
