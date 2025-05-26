@@ -35,11 +35,11 @@ console.log(giveMeFive({Our:"earth",is:"a",beautyful:"world"}))
 //https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 function buildFun(n){
 
-	var res = []
+	const res = []
 
-	for (var i = 0; i< n; i++){
+	for (let i = 0; i< n; i++){
 		res.push(function(){
-			console.log(i)
+			return (i)
 		})
 	}
 	return res
@@ -60,34 +60,28 @@ class Animal {
 }
 
 class Shark extends Animal {
-  constructor(name, age, legs, species, status) {
+  constructor(name, age, status) {
     super(name, age, 0, 'shark', status);
-  }
-  introduce() {
-    return `${super.introduce()}`
   }
 }
 
 class Cat extends Animal {
-  constructor(name, age, legs, species, status) {
+  constructor(name, age, status) {
     super(name, age, 4, 'cat', status);
   }
   introduce() {
-    return `${super.introduce()} Meow meow!`;
+    return `${super.introduce()}  Meow meow!`;
   }
 }
 
 class Dog extends Animal {
-  constructor(name, age, legs, species, status) {
+  constructor(name, age, status, master) {
     super(name, age, 4, 'dog', status)
     this.master = master
   }
-  introduce() {
-    return `${super.introduce()}`;
-  }
 
-  greetMaster(master) {
-    return `Hello ${master}`;
+  greetMaster() {
+    return `Hello ${this.master}`;
   }
 }
 

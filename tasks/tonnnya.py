@@ -227,7 +227,7 @@ class Cat(Animal):
 
 class Dog(Animal):
     def __init__(self, name, age, status):
-        super().__init__(name = name, age = age, legs = 4, species = 'Dog', status = status)
+        super().__init__(name = name, age = age, legs = 4, species = 'Dog', status = status,master)
         self.master = master
 
     def introduce(self):
