@@ -227,7 +227,7 @@ class Cat(Animal):
 
 class Dog(Animal):
     def __init__(self, name, age, status):
-        super().__init__(name = name, age = age, legs = 4, species = 'Dog', status = status,master)
+        super().__init__(name = name, age = age, legs = 4, species = 'Dog', status = status)
         self.master = master
 
     def introduce(self):
@@ -238,3 +238,8 @@ class Dog(Animal):
 
 
 print(Shark('Jaws', 5, 'Healthy').introduce())
+
+def f(*args):
+    return sum(args)/len(args)
+print(f(1, 2, 3, 4, 5))  # Output: 15
+
