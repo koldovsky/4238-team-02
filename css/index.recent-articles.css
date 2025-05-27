@@ -20,6 +20,8 @@
 .recent-articles__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap : 24px;
+}
 
 .recent-articles__image-wrapper {
   position: relative;
@@ -67,5 +69,4 @@
   transition: color 0.3s ease;
   font-size: 14px;
 
-}
 }
