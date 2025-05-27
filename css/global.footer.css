@@ -58,10 +58,19 @@
   text-decoration: none;
 }
 
-.footer__subscribe-title {
-  color: var(--color-secondary);
+.footer__subscribe-title-inDesc {
+  color: var(--color-secondary); 
+  transition: transform 0.2s ease, text-shadow 0.3s ease;
+  display: inline-block;
 }
 
+.footer__subscribe-title-inDesc:hover {
+  transform: scale(1.03); /* легке збільшення */
+  text-shadow:
+    0 0 6px rgba(255, 213, 161, 0.5),
+    0 0 10px rgba(255, 213, 161, 0.3); /* легке підсв. по боках */
+  cursor: pointer;
+}
 .footer__subscribe-message {
   color: var(--color-accent);
   font-weight: bold;
@@ -79,6 +88,28 @@
   max-width: 300px;
   text-align: center;
   margin-top: 10px;
+}
+
+.footer__message {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  font-family: var(--font-main); /* тут вказуємо шрифт явно */
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 12px;
+  display: inline-block;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.footer__message.success {
+  color: #0a8817;
+  background-color: rgba(10, 136, 23, 0.1);
+}
+
+.footer__message.error {
+  color: #cc0000;
+  background-color: rgba(204, 0, 0, 0.1);
 }
 
 .footer__button {
