@@ -53,15 +53,30 @@
   text-align: center;
 }
 
+
 .footer__menu-link {
   color: #a4a29f;
   text-decoration: none;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+.footer__menu-link:hover {
+  text-shadow: 0 0 6px rgba(255, 213, 161, 0.4); /* м'яке світіння */
+  color: #a4a29f; /* залишаємо той самий колір */
 }
 
-.footer__subscribe-title {
-  color: var(--color-secondary);
+.footer__subscribe-title-inDesc {
+  color: var(--color-secondary); 
+  transition: transform 0.2s ease, text-shadow 0.3s ease;
+  display: inline-block;
 }
 
+.footer__subscribe-title-inDesc:hover {
+  transform: scale(1.03); /* легке збільшення */
+  text-shadow:
+    0 0 6px rgba(255, 213, 161, 0.5),
+    0 0 10px rgba(255, 213, 161, 0.3); /* легке підсв. по боках */
+  cursor: pointer;
+}
 .footer__subscribe-message {
   color: var(--color-accent);
   font-weight: bold;
@@ -81,6 +96,28 @@
   margin-top: 10px;
 }
 
+.footer__message {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  font-family: var(--font-main); /* тут вказуємо шрифт явно */
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 12px;
+  display: inline-block;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.footer__message.success {
+  color: #0a8817;
+  background-color: rgba(10, 136, 23, 0.1);
+}
+
+.footer__message.error {
+  color: #cc0000;
+  background-color: rgba(204, 0, 0, 0.1);
+}
+
 .footer__button {
   display: inline-block;
   padding: 10px 20px;
@@ -92,6 +129,21 @@
   border-radius: 34px;
   border: none;
   margin-top: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover: м'яке світіння і натиск */
+.footer__button:hover {
+  background-color: #ffddb0; /* трохи світліший варіант var(--color-secondary) */
+  box-shadow: 0 0 12px rgba(255, 213, 161, 0.6); /* ефект підсвітки */
+  transform: translateY(-2px); /* трохи піднімається */
+  cursor: pointer;
+}
+
+/* Optional: active (при натисканні) */
+.footer__button:active {
+  transform: translateY(0);
+  box-shadow: 0 0 4px rgba(255, 213, 161, 0.4);
 }
 
 .footer__subscribe-form {
@@ -118,6 +170,57 @@
 .footer__bottom-left,
 .footer__bottom-right {
   white-space: nowrap;
+}
+.footer--dark {
+  background-color: #1a1a1a;
+}
+
+.footer--dark .footer__description,
+.footer--dark .footer__menu-link,
+.footer--dark .footer__subscribe-title,
+.footer--dark .footer__navigation-title,
+.footer--dark .footer__bottom {
+  color: #f5f5f5;
+}
+
+.footer--dark .footer__icon {
+  fill: #f5f5f5;
+}
+
+.footer--dark .footer__input {
+  background-color: #333;
+  border-color: #666;
+  color: #f5f5f5;
+}
+
+.footer--dark .footer__button {
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
+
+/* Кнопка перемикання */
+.footer__theme-toggle {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 14px;
+}
+.footer__theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000;
+}
+
+.footer--dark .footer__theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.footer,
+.footer * {
+  transition: background-color 0.4s ease, color 0.4s ease, fill 0.4s ease, border-color 0.4s ease;
 }
 
 
