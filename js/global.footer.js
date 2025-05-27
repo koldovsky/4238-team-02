@@ -1,4 +1,3 @@
-console.log("Футер JS завантажено");
 
 const tryAttachFooterHandler = () => {
   const footer = document.querySelector('footer');
@@ -30,11 +29,6 @@ const tryAttachFooterHandler = () => {
         localStorage.setItem('footerTheme', 'dark');
       }
     });
-
-    console.log("Перемикач теми футера готовий");
-  } else {
-    console.warn("Футер або кнопка не знайдені, пробую пізніше...");
-    setTimeout(tryAttachFooterHandler, 300);
   }
 };
 
