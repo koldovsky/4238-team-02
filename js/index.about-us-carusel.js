@@ -38,8 +38,8 @@ function prevSlide() {
 // setInterval(nextSlide, 3000);
 renderSlides();
 
-const btnNext = document.querySelector(".product-carousel__button--next");
-const btnPrev = document.querySelector(".product-carousel__button--prev");
+const btnNext = document.querySelector(".about-us-carousel__button--next");
+const btnPrev = document.querySelector(".about-us-carousel__button--prev");
 
 btnNext.addEventListener("click", nextSlide);
 btnPrev.addEventListener("click", prevSlide);
