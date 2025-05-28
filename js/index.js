@@ -1,6 +1,7 @@
 function init() {
     import('./about.js');
     import('./global.footer.js');
+    import('./our-services.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;

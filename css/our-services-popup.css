@@ -1,0 +1,56 @@
+.discount-popup {
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-53%, -50%);
+  background-color: #fff8e1;
+  padding: 16px 24px;
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  z-index: 9999;
+  display: none;
+  max-width: 360px;
+  width: 90vw;
+  font-family: var(--font-main);
+  text-align: center;
+}
+
+.discount-popup__text {
+  margin: 0 0 12px;
+  font-size: 21px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.discount-popup__text strong {
+  color: red;
+}
+
+.discount-popup__close {
+  background-color: #ffc107;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .discount-popup {
+    padding: 12px 16px;
+    max-width: 300px;
+    font-size: 14px;
+  }
+
+  .discount-popup__text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .discount-popup__close {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+}
