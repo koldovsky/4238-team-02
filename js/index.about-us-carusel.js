@@ -9,6 +9,7 @@ const slides = [
 let currentIndex = 0;
 
 function renderSlides() {
+<<<<<<< Updated upstream
     const slidesContainer = document.querySelector('.about-us-carusel__slides');
   slidesContainer.innerHTML = slides[currentIndex];
   if (window.matchMedia("(min-width: 768px)").matches) {
@@ -19,6 +20,10 @@ function renderSlides() {
       slidesContainer.innerHTML += slides[thirdSlideIndex];
     }
   }
+=======
+    const carousel = document.querySelector('.about-us-carusel__slides');
+    carousel.innerHTML = slides[currentIndex];
+>>>>>>> Stashed changes
 }
 
 function nextSlide() {
@@ -28,6 +33,7 @@ function nextSlide() {
 
 setInterval(nextSlide, 3000); // Change slide every 3 seconds
 
+<<<<<<< Updated upstream
 function prevSlide() {
   currentIndex = (currentIndex - 1 + slides.length) % slides.length;
   renderSlides();
@@ -43,3 +49,5 @@ btnNext.addEventListener("click", nextSlide);
 btnPrev.addEventListener("click", prevSlide);
 
 window.addEventListener("resize", renderSlides);
+=======
+>>>>>>> Stashed changes
