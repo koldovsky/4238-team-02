@@ -1,4 +1,5 @@
 function init() {
+    import('./global.header-nav.burger-menu.js');
     import('./about.js');
     import('./global.footer.js');
     import('./clock-container.js');
