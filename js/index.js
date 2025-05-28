@@ -3,7 +3,8 @@ function init() {
     import('./global.footer.js');
     import('./clock-container.js');
     import('./contact.js');
-    import('./index.about-us-carusel.js')
+    import('./index.about-us-carusel.js');
+    import('./our-services.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
