@@ -7,7 +7,7 @@ function handleDOMContentLoaded() {
 
 function createObserver() {
   const options = {
-    threshold: 0.2
+    threshold: 0.2,
   }; //коли 20% елементу будуть видимі у вікні браузера спостерігач активується
 
   const observer = new IntersectionObserver(onIntersect, options);
@@ -23,49 +23,65 @@ function onIntersect(entries, observer) {
   }
 }
 
-function waitForTargetAndObserve(observer) { //створює функцію яка приймає на вхід наш спостерігач
-  const interval = setInterval(() => { //її завдання дочекатись появи елементу .our-services на сторінці і тоді--
-    const target = document.querySelector('.our-services'); //--прикріпити спостерігач 
+function waitForTargetAndObserve(observer) {
+  //створює функцію яка приймає на вхід наш спостерігач
+  const interval = setInterval(() => {
+    //її завдання дочекатись появи елементу .our-services на сторінці і тоді--
+    const target = document.querySelector(".our-services"); //--прикріпити спостерігач
     if (target) {
-      observer.observe(target); 
-      clearInterval(interval);  
+      observer.observe(target);
+      clearInterval(interval);
     }
-  }, 200); //таймер перевіряє кожні 200 мілісекунд чи html вже завантажив .our-services в DOM. 
-} //якщо не завантажив - повторює цикл, якщо завантажив то прикріплює спостерігач і зупиняє таймер. 
+  }, 200); //таймер перевіряє кожні 200 мілісекунд чи html вже завантажив .our-services в DOM.
+} //якщо не завантажив - повторює цикл, якщо завантажив то прикріплює спостерігач і зупиняє таймер.
 
-function showDiscountPopup() { //функція викликає (показує нам) попап із знижкою
-  const popup = document.getElementById('discount-popup'); //шукає елемент з id="discount-popup"
+function showDiscountPopup() {
+  //функція викликає (показує нам) попап із знижкою
+  const popup = document.getElementById("discount-popup"); //шукає елемент з id="discount-popup"
   if (!popup) return;
 
   const deadlineText = generateDeadlineText(); //повертає строку дедлайну, нижче згенеруємо текст
-  const deadlineElement = document.getElementById('discount-deadline'); 
+  const deadlineElement = document.getElementById("discount-deadline");
   if (deadlineElement) {
     deadlineElement.textContent = deadlineText;
   }
 
-   popup.style.display = 'block'; //показуємо попап
+  popup.style.display = "block"; //показуємо попап
 
-    const closeButton = popup.querySelector('.discount-popup__close'); //кнопка close
+  const getButton = popup.querySelector(".discount-popup__get"); //кнопка GET
+  if (getButton) {
+    getButton.addEventListener("click", function () {
+      const headerHero = document.getElementById("header-hero"); //якщо натискаємо, скролить в header-hero
+      if (headerHero) {
+        headerHero.scrollIntoView({ behavior: "smooth" });
+      }
+      popup.style.display = "none"; //ховається після скролу
+    });
+  }
+
+  const closeButton = popup.querySelector(".discount-popup__close"); //кнопка close
   if (closeButton) {
-    closeButton.addEventListener('click', () => { //якщо користувач закриє попап, він зникне з екрана
-      popup.style.display = 'none'; 
+    closeButton.addEventListener("click", function () {
+      popup.style.display = "none"; //зникає після натискання close
     });
   }
 }
 
-function generateDeadlineText() { //генеруємо текст в строку дедлайну
+function generateDeadlineText() {
+  //генеруємо текст в строку дедлайну
   const deadline = new Date();
   deadline.setDate(deadline.getDate() + 1); //робимо дату завтрашньою
-  deadline.setHours(18, 0, 0, 0); //встановлюємо фіксований час на 6 pm. 
+  deadline.setHours(18, 0, 0, 0); //встановлюємо фіксований час на 6 pm.
 
-  const options = { //форматування дати в текст
-    weekday: 'short', //скорочено день тижня (Mon, Tue...)
-    year: 'numeric', //повний рік (2025, 2026...)
-    month: 'short', //скорочений місяць (May, Jun...)
-    day: 'numeric', //день місяця (28,29...)
-    hour: '2-digit', //двох числовий формат години
-    minute: '2-digit' //двох числовий формат хвилин
+  const options = {
+    //форматування дати в текст
+    weekday: "short", //скорочено день тижня (Mon, Tue...)
+    year: "numeric", //повний рік (2025, 2026...)
+    month: "short", //скорочений місяць (May, Jun...)
+    day: "numeric", //день місяця (28,29...)
+    hour: "2-digit", //двох числовий формат години
+    minute: "2-digit", //двох числовий формат хвилин
   };
 
-   return deadline.toLocaleString('en-US', options); //перетворюємо в строку відповідно до налаштувань, стиль US (am, pm)
+  return deadline.toLocaleString("en-US", options); //перетворюємо в строку відповідно до налаштувань, стиль US (am, pm)
 }

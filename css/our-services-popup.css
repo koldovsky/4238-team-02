@@ -28,13 +28,35 @@
   color: red;
 }
 
-.discount-popup__close {
+.discount-popup__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.discount-popup__get {
   background-color: #ffc107;
   border: none;
-  padding: 6px 12px;
+  padding: 10px 20px;
   cursor: pointer;
   border-radius: 4px;
   font-weight: bold;
+  font-size: 16px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.discount-popup__close {
+  background-color: #ffc107;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 100px;
+  text-align: center;
 }
 
 @media (max-width: 480px) {
