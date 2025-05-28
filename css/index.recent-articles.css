@@ -6,12 +6,11 @@
 .recent-articles__title {
   text-align: center;
   font-size: 38px;
-  color: #5c524b;
+  color: var(--color-primary);
   font-weight: 800;
 }
-
 .recent-articles__subtitle {
-  color: #76706b;
+  color: var(--color-dark);
   text-align: center;
   font-size: 19px;
   margin-bottom: 48px;
@@ -45,7 +44,7 @@
   left: 10px;
   bottom: 10px;
   right: 10px;
-  color: white;
+  color: var(--background-color-main);
   padding: 10px;
   font-size: 25px;
   line-height: 1.4;
@@ -57,7 +56,6 @@
   justify-content: flex-end;
   height: 100%;
   box-sizing: border-box;
-  
 }
 
 .recent-articles__text-overlay.center {
@@ -65,7 +63,7 @@
   left: 10px;
   bottom: 10px;
   right: 10px;
-  color: white;
+  color: var(--background-color-main);
   padding: 10px;
   font-size: 25px;
   line-height: 1.4;
@@ -77,7 +75,6 @@
   justify-content: flex-end;
   height: 100%;
   box-sizing: border-box;
-
 }
 
 .recent-articles__text {
@@ -88,21 +85,7 @@
 .recent-articles__link {
   font-size: 14px;
   font-weight: 700;
-  color: #f9c649;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-
-.recent-articles__text {
-  margin: 0;
-  margin-bottom: 0.5rem;
-}
-
-.recent-articles__link {
-  font-size: 14px;
-  font-weight: 700;
-  color: #f9c649;
+  color: var(--color-secondary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
