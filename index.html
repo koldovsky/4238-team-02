@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moving Company Website Template Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link
       rel="shortcut icon"
       href="https://placekitten.com/96/139"
@@ -18,7 +19,7 @@
       src="https://kit.fontawesome.com/52d5050453.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
@@ -50,11 +51,22 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.about-us.partial.html"
       ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.about-us-carusel.partial.html"
+      ></section>
       <!--Stction Steps Vinicenko Viktoria-->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.steps.partial.html"
+      ></section>
+      <!-- Moving Can Be Stress-Free Vykliu Viktor-->
+      <section
+        data-hx-trigeer="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.moving-stress-free.html"
       ></section>
       <!--Section question about services Maria Savchuk-->
       <section
@@ -93,11 +105,27 @@
         data-hx-get="index.recent-articles.partial.html"
       ></section>
     </main>
+    <section
+      class="contact"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.contact.partial.html"> </section>
+
+
     <!-- Footer Yaroslav Petruk -->
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
       data-hx-get="global.footer.partial.html"
     ></footer>
+<!-- global.discount by Andrii Shaposhnyk -->
+    <div
+      data-hx-trigger="load"
+      data-hx-get="global.discount-popup.partial.html"
+      data-hx-swap="afterbegin"
+    ></div>
+    <script src="js/index.js" type="module"></script>
+
   </body>
+  
 </html>

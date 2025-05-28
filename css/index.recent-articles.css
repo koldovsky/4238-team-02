@@ -6,66 +6,93 @@
 .recent-articles__title {
   text-align: center;
   font-size: 38px;
-  color: #5c524b;
+  color: var(--color-primary);
   font-weight: 800;
 }
-
 .recent-articles__subtitle {
-  color: #76706b;
+  color: var(--color-dark);
   text-align: center;
   font-size: 19px;
   margin-bottom: 48px;
 }
 
 .recent-articles__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  position: relative;
+  box-sizing: border-box;
+  gap: 2rem;
+}
+
+.recent-articles__image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 371px;
+  overflow: hidden;
+  margin: 25px 0;
+}
+
+.recent-articles__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.recent-articles__text-overlay {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  color: var(--background-color-main);
+  padding: 10px;
+  font-size: 25px;
+  line-height: 1.4;
+  border-radius: 5px;
+  z-index: 1;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  justify-content: flex-end;
+  height: 100%;
+  box-sizing: border-box;
 }
 
-.recent-articles__item {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  min-height: 353px;
-  display: flex;
-  align-items: flex-end;
-  padding: 24px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.recent-articles__item::after {
-  content: '';
+.recent-articles__text-overlay.center {
   position: absolute;
-  inset: 0;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  color: var(--background-color-main);
+  padding: 10px;
+  font-size: 25px;
+  line-height: 1.4;
+  border-radius: 5px;
   z-index: 1;
-}
-
-.recent-articles__description {
-  position: relative;
-  z-index: 2;
-  font-size: 22px;
   text-align: left;
-  color: #ffffff;
-  font-weight: 700;
-  line-height: 28.6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  box-sizing: border-box;
 }
+
+.recent-articles__text {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
 .recent-articles__link {
-  color: rgb(249, 198, 73);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.recent-articles__item--happy {
-  background-image: url(img/recent-articles/moving-happy.png);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
-
-.recent-articles__item--worker {
-  background-image: url(img/recent-articles/moving-worker.png);
-}
-
-.recent-articles__item--family-work {
-  background-image: url(img/recent-articles/moving-family-work.png);
-}
-
-
-  

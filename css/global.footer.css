@@ -1,23 +1,27 @@
 .footer {
   background-color: var(--color-primary);
+  padding: 40px 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .footer__logo {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .footer__logo-image {
-  width: 162px;   
+  width: 162px;
   height: auto;
-  margin-top: 30px;   
 }
 
 .footer__description {
   color: #a4a29f;
   font-size: 16px;
+  margin-top: 30px;
   text-align: center;
-  margin-top: 20px;
 }
 
 .footer__socials {
@@ -33,54 +37,240 @@
 
 .footer__navigation-title {
   font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 30px;
   text-align: center;
   color: var(--color-accent);
-  margin-top: 50px;
 }
 
 .footer__menu {
+  list-style: none;    /* прибираємо маркери */
+  margin: 0;           /* прибираємо зовнішні відступи */
+  padding: 0;          /* прибираємо внутрішні відступи */
   display: flex;
-  text-align: center;
   flex-direction: column;
-  color: #a4a29f;
+  gap: 10px;
+  text-align: center;
 }
+
 
 .footer__menu-link {
   color: #a4a29f;
   text-decoration: none;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+.footer__menu-link:hover {
+  text-shadow: 0 0 6px rgba(255, 213, 161, 0.4); /* м'яке світіння */
+  color: #a4a29f; /* залишаємо той самий колір */
 }
 
-.footer__menu-item {
-  margin-top: 20px;
-
+.footer__subscribe-title-inDesc {
+  color: var(--color-secondary); 
+  transition: transform 0.2s ease, text-shadow 0.3s ease;
+  display: inline-block;
 }
 
+.footer__subscribe-title-inDesc:hover {
+  transform: scale(1.03); /* легке збільшення */
+  text-shadow:
+    0 0 6px rgba(255, 213, 161, 0.5),
+    0 0 10px rgba(255, 213, 161, 0.3); /* легке підсв. по боках */
+  cursor: pointer;
+}
 .footer__subscribe-message {
-  .footer__subscribe-title {
-    color: var(--color-secondary);
-  }
   color: var(--color-accent);
   font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 30px;
   text-align: center;
-  margin-top: 20px;
 }
+
 .footer__input {
-  border-color:#f5f4f2;
+  border-color: #f5f4f2;
   background-color: #554c46;
-  display: block;
+  padding: 10px;
+  border-radius: 34px;
+  width: 100%;
+  max-width: 300px;
   text-align: center;
-  /*Complete later*/
+  margin-top: 10px;
+}
+
+.footer__message {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  font-family: var(--font-main); /* тут вказуємо шрифт явно */
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 12px;
+  display: inline-block;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.footer__message.success {
+  color: #0a8817;
+  background-color: rgba(10, 136, 23, 0.1);
+}
+
+.footer__message.error {
+  color: #cc0000;
+  background-color: rgba(204, 0, 0, 0.1);
 }
 
 .footer__button {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 10px 20px;
   text-align: center;
-  text-decoration: none;
+  width: 100%;
+  max-width: 300px;
   color: #554c46;
   background-color: var(--color-secondary);
   border-radius: 34px;
   border: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-/*desktop*/
+/* Hover: м'яке світіння і натиск */
+.footer__button:hover {
+  background-color: #ffddb0; /* трохи світліший варіант var(--color-secondary) */
+  box-shadow: 0 0 12px rgba(255, 213, 161, 0.6); /* ефект підсвітки */
+  transform: translateY(-2px); /* трохи піднімається */
+  cursor: pointer;
+}
+
+/* Optional: active (при натисканні) */
+.footer__button:active {
+  transform: translateY(0);
+  box-shadow: 0 0 4px rgba(255, 213, 161, 0.4);
+}
+
+.footer__subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.footer__bottom-left,
+.footer__bottom-right {
+  white-space: nowrap;
+}
+.footer--dark {
+  background-color: #1a1a1a;
+}
+
+.footer--dark .footer__description,
+.footer--dark .footer__menu-link,
+.footer--dark .footer__subscribe-title,
+.footer--dark .footer__navigation-title,
+.footer--dark .footer__bottom {
+  color: #f5f5f5;
+}
+
+.footer--dark .footer__icon {
+  fill: #f5f5f5;
+}
+
+.footer--dark .footer__input {
+  background-color: #333;
+  border-color: #666;
+  color: #f5f5f5;
+}
+
+.footer--dark .footer__button {
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
+
+/* Кнопка перемикання */
+.footer__theme-toggle {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 14px;
+}
+.footer__theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000;
+}
+
+.footer--dark .footer__theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.footer,
+.footer * {
+  transition: background-color 0.4s ease, color 0.4s ease, fill 0.4s ease, border-color 0.4s ease;
+}
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Десктоп */
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 60px 80px;
+    text-align: left;
+    align-items: start;
+  }
+
+  .footer__column {
+    text-align: left !important;
+  }
+
+  .footer__logo,
+  .footer__socials {
+    justify-content: flex-start;
+  }
+
+  .footer__description,
+  .footer__navigation-title,
+  .footer__menu,
+  .footer__subscribe-message {
+    text-align: left !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .footer__subscribe-form {
+    align-items: flex-start;
+  }
+
+  .footer__input {
+    text-align: left;
+  }
+
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    text-align: left;
+    grid-column: 1 / -1;
+  }
+}
