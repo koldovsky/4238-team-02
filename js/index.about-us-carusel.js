@@ -1,47 +1,20 @@
-const slides = [
-    '<div><img src='img/about-us.png'></div>'
-    '<div><img src='img/about-us.png'></div>'
-    '<div><img src='img/about-us.png'></div>'
-    '<div><img src='img/about-us.png'></div>'
-    '<div><img src='img/about-us.png'></div>'
-    ];
+import EmblaCarousel from "embla-carousel";
 
-let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  const emblaNode = document.querySelector('.embla');
+  const viewportNode = emblaNode.querySelector('.embla__viewport');
 
-function renderSlides() {
-  const slidesContainer = document.querySelector('.about-us-carusel__slides');
-  slidesContainer.innerHTML = slides[currentIndex];
-  if (window.matchMedia("(min-width: 768px)").matches) {
-    const secondSlideIndex = (currentIndex + 1) % slides.length;
-    slidesContainer.innerHTML += slides[secondSlideIndex];
-    if (window.matchMedia("(min-width: 1024px)").matches) {
-      const thirdSlideIndex = (currentIndex + 2) % slides.length;
-      slidesContainer.innerHTML += slides[thirdSlideIndex];
-    }
-  }
-    const carousel = document.querySelector('.about-us-carusel__slides');
-    carousel.innerHTML = slides[currentIndex];
+  const embla = EmblaCarousel(viewportNode, {
+    loop: true,
+    align: 'start',
+    slidesToScroll: 1,
+    speed: 10,
+  });
 
+  const btnPrev = emblaNode.querySelector('.embla__prev');
+  const btnNext = emblaNode.querySelector('.embla__next');
 
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    renderSlides();
-}
+  btnPrev.addEventListener('click', embla.scrollPrev);
+  btnNext.addEventListener('click', embla.scrollNext);
+});
 
-setInterval(nextSlide, 3000); // Change slide every 3 seconds
-
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  renderSlides();
-}
-
-// setInterval(nextSlide, 3000);
-renderSlides();
-
-const btnNext = document.querySelector(".about-us-carousel__button--next");
-const btnPrev = document.querySelector(".about-us-carousel__button--prev");
-
-btnNext.addEventListener("click", nextSlide);
-btnPrev.addEventListener("click", prevSlide);
-
-window.addEventListener("resize", renderSlides);
