@@ -30,6 +30,14 @@ const contacts = [
         address: "205 E 76th St, New York, NY 10021, United States",
         phone: "+1 (234) 567 89 00",
         email: "easymove@email.com"
+    },
+        {
+        id: 5,
+        map: "https://www.google.com/maps?q=28+State+St+37th+floor,+Boston,+MA+02109&output=embed",
+        title: "Boston Office",
+        address: "28 State St 37th floor, Boston, MA 02109, United States",
+        phone: "+1 (234) 567 55 00",
+        email: "easymove.boston@email.com"
     }
 ];
 

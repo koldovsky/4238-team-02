@@ -30,7 +30,7 @@ const contacts = [
         address: "205 E 76th St, New York, NY 10021, United States",
         phone: "+1 (234) 567 89 00",
         email: "easymove@email.com"
-    }
+    },
         {
         id: 5,
         map: "https://www.google.com/maps?q=205+E+76th+St,+New+York,+NY+10021&output=embed",
