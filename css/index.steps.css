@@ -1,0 +1,15 @@
+.steps {
+font-family: "Assistant", sans-serif;
+ text-align: center;
+ background-color: white;
+}
+.steps__title {
+   font-size: 3.5rem;
+  color: #5C524B; 
+}
+.steps__subtitle {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #76706B;    
+}
