@@ -86,14 +86,29 @@
 }
 
 .footer__input {
-  border-color: #f5f4f2;
   background-color: #554c46;
-  padding: 10px;
+  border: none; /* забирає білу рамку */
   border-radius: 34px;
   width: 100%;
   max-width: 300px;
-  text-align: center;
+  padding: 12px 20px;
+  text-align: left;
   margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-family: var(--font-main);
+  font-style: normal; /* прибирає курсив */
+  outline: none; /* прибирає синій ободок */
+  box-shadow: inset 0 0 0 1px #a4a29f; /* м'яка рамка */
+}
+
+.footer__input::placeholder {
+  color: #c9c6c2;
+  font-style: normal; /* курсив off */
+}
+
+.footer__input:focus {
+  box-shadow: inset 0 0 0 2px var(--color-secondary); /* виділення при фокусі */
 }
 
 .footer__message {
