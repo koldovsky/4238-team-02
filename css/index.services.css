@@ -1,3 +1,17 @@
+:root {
+  --color-primary: #1a1a1a;
+  --color-secondary: #ffd447;
+  --color-light: #555;
+  --color-accent: #f8f6f3;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: var(--color-primary);
+}
+
 .services {
   background-color: var(--color-accent);
   padding: 4rem 1rem;
@@ -87,12 +101,20 @@
   gap: 1rem;
 }
 
-.services__icon {
+.services__icon-wrapper {
   width: 64px;
   height: 64px;
   background-color: var(--color-secondary);
   border-radius: 50%;
-  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
 .services__title {
