@@ -69,20 +69,30 @@ body {
 }
 
 .services__question-button {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color-secondary); /* жовтий */
+  color: var(--color-primary); /* чорний текст */
   border: none;
   border-radius: 30px;
   padding: 0.75rem 1.8rem;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* наведення */
 .services__question-button:hover {
-  background-color: #e2b43b;
+  background-color: #e2b43b; 
 }
+
+/* натисканий стан */
+.services__question-button:active {
+  background-color: #fff; /* білий фон */
+  color: var(--color-primary); /* чорний текст */
+}
+
 
 .services__list {
   flex: 2 1 600px;
@@ -125,4 +135,22 @@ body {
 .services__description {
   font-size: 1rem;
   color: var(--color-light);
+}
+@media (max-width: 576px) {
+  .services__question-button {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .services__question-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .services__question-subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
