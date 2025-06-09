@@ -1,19 +1,5 @@
-:root {
-  --color-primary: #1a1a1a;
-  --color-secondary: #ffd447;
-  --color-light: #555;
-  --color-accent: #f8f6f3;
-}
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: var(--color-primary);
-}
-
 .services {
-  background-color: var(--color-accent);
+  background-color: #f8f6f3;
   padding: 4rem 1rem;
 }
 
@@ -55,7 +41,7 @@ body {
 }
 
 .services__question-subtitle {
-  color: var(--color-secondary);
+  color: #ffd447;
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -71,8 +57,8 @@ body {
 .services__question-button {
   display: inline-block;
   text-decoration: none;
-  background-color: var(--color-secondary); /* жовтий */
-  color: var(--color-primary); /* чорний текст */
+  background-color: #ffd447;
+  color: #1a1a1a;
   border: none;
   border-radius: 30px;
   padding: 0.75rem 1.8rem;
@@ -82,17 +68,14 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* наведення */
 .services__question-button:hover {
-  background-color: #e2b43b; 
+  background-color: #e2b43b;
 }
 
-/* натисканий стан */
 .services__question-button:active {
-  background-color: #fff; /* білий фон */
-  color: var(--color-primary); /* чорний текст */
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
-
 
 .services__list {
   flex: 2 1 600px;
@@ -114,7 +97,7 @@ body {
 .services__icon-wrapper {
   width: 64px;
   height: 64px;
-  background-color: var(--color-secondary);
+  background-color: #ffd447;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -134,8 +117,9 @@ body {
 
 .services__description {
   font-size: 1rem;
-  color: var(--color-light);
+  color: #555555;
 }
+
 @media (max-width: 576px) {
   .services__question-button {
     width: 100%;
